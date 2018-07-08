@@ -1,0 +1,121 @@
+body {
+  background-image: url("chalkboard.jpg");
+  background-size: cover;
+  font-size: 16px;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+
+h1 {
+    font-family: "Homemade Apple", script;
+    font-size: 2.5em;
+    text-align: center;
+    color: floralwhite;
+    padding-top: .5em;
+}
+
+.accordion {
+  clear: both;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  margin: 0;
+  
+}
+
+.accordion ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion ul li {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  width: 30%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 500ms ease;
+}
+
+.accordion ul li div {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.accordion ul li div a {
+  display: block;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  vertical-align: bottom;
+  padding: 2em;
+  box-sizing: border-box;
+  color: #fff;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+  opacity: 0;
+  margin: 0;
+  width: 100%;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 5;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+  font-family: Verdana, sans-serif;
+  text-overflow: clip;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-bottom: .25em;
+  
+}
+
+.accordion ul li div a p {
+  font-family: Times New Roman, serif;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 0;
+  
+}
+
+
+.accordion ul li:nth-child(1) { background-image: url("speaking2.jpg"); background-size: cover;}
+
+.accordion ul li:nth-child(2) { background-image: url("vineyard.jpg"); background-size: cover;}
+
+.accordion ul li:nth-child(3) { background-image: url("steampunk.jpg"); background-size: cover; }
+
+
+
+
+.accordion ul:hover li { width: 20%; }
+
+.accordion ul:hover li:hover { width: 50%; }
+
+.accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+
+.accordion ul:hover li:hover a * {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
